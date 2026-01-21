@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/styles.css">
+    </head>
+    <body>
+        <ul>
+             <% messages.forEach(function(message) { %>
+                <li>
+                    <strong><%= message.user %></strong>: <br> <%= message.text %>
+                    <br>
+                    <small>Added on: <%= message.added.toDateString() %></small>
+                </li>
+            <% }); %>
+        </ul>
+    </body>
+</html>
