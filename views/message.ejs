@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/styles.css">
+    </head>
+
+    <body>
+        <div class="container">
+        <h1>Message Details</h1>
+        <h2><strong>User:</strong> <%= message.user %></h2>
+        <p><strong>Text:</strong> <%= message.text %></p>
+        <small><strong>Date:</strong> <%= message.added.toDateString() %></small>
+        <button>
+            <a href="/">Back</a>
+        </button>
+        </div>
+    </body>
+</html>
+
+

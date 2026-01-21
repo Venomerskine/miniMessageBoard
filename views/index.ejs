@@ -6,13 +6,16 @@
         <h1>Mini MessageBorad</h1>
         <a href="/new">New Message</a>
         <ul>
-             <% messages.forEach(function(message) { %>
-                <li>
-                    <strong><%= message.user %></strong>: <br> <%= message.text %>
-                    <br>
-                    <small>Added on: <%= message.added.toDateString() %></small>
-                </li>
-            <% }); %>
+        <% messages.forEach(function(message, index) { %>
+            <li>
+            <a href="/message/<%= index %>">
+                <strong><%= message.user %></strong><br>
+                <%= message.text %><br>
+                <small>Added on: <%= message.added.toDateString() %></small>
+            </a>
+            </li>
+        <% }); %>
         </ul>
+
     </body>
 </html>

@@ -7,10 +7,10 @@
 }
 
 :root {
-  --beidge: #e2d241;
+  --beidge: #c0b12e;
   --green: #1a5a2a;
-  --dark: #ffffff;
-  --light: #fdd700;
+  --dark: #0e0d0d;
+  --light: #ffffff;
 }
 
 
@@ -59,13 +59,13 @@ li p {
 }
 
 a {
-  color: var(--beidge);
+  color: var(--dark);
   text-decoration: none;
   font-weight: bold;
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 form {
