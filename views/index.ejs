@@ -8,11 +8,10 @@
         <ul>
         <% messages.forEach(function(message, index) { %>
             <li>
-            <a href="/message/<%= index %>">
-                <strong><%= message.username %></strong><br>
-                <%= message.text_message %><br>
-                <small>Added on: <%= message.date_added %></small>
-            </a>
+                <a href="/message/<%= message.id %>">
+                    <strong><%= message.username %></strong><br>
+                    <%= message.text_message %><br>
+                </a>
                 <form action="/message/<%= message.id %>/delete" method="POST"">
                     <button type="submit">Delete</button>
                 </form>

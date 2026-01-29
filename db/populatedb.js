@@ -20,9 +20,7 @@ VALUES
 
 async function main() {
   console.log("Seeding database...");
-  
-  // Uses the variables from your .env automatically if they match pg defaults
-  // or you can pass the config object like we did with Pool
+
   const client = new Client({
     host: process.env.PGHOST,
     user: process.env.PGUSER,
