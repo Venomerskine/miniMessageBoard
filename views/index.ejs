@@ -13,7 +13,7 @@
                 <%= message.text_message %><br>
                 <small>Added on: <%= message.date_added %></small>
             </a>
-                <form action="/message/<%= message.id %>/delete" method="POST" style="display:inline;">
+                <form action="/message/<%= message.id %>/delete" method="POST"">
                     <button type="submit">Delete</button>
                 </form>
             </li>
