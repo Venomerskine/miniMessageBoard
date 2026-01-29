@@ -27,6 +27,9 @@ async function main() {
     password: process.env.PGPASSWORD,
     database: process.env.PGDATABASE,
     port: process.env.PGPORT,
+    ssl: {
+      rejectUnauthorized: false, 
+    },
   });
 
   try {
