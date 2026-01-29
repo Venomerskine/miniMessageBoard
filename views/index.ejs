@@ -9,9 +9,9 @@
         <% messages.forEach(function(message, index) { %>
             <li>
             <a href="/message/<%= index %>">
-                <strong><%= message.user %></strong><br>
-                <%= message.text %><br>
-                <small>Added on: <%= message.added.toDateString() %></small>
+                <strong><%= message.username %></strong><br>
+                <%= message.text_message %><br>
+                <small>Added on: <%= message.date_added %></small>
             </a>
             </li>
         <% }); %>
