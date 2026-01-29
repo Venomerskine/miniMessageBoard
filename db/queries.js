@@ -28,5 +28,6 @@ async function deleteMessageById(id) {
 module.exports = {
     getAllMessage,
     addNewMessage,
-    getMessageById
+    getMessageById,
+    deleteMessageById
 }

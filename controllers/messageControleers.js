@@ -30,8 +30,17 @@ async function getMessages(req, res) {
   res.render("index", { messages });
 }
 
+async function deleteMessage(req, res) {
+    const id = req.params.id;
+
+    await db.deleteMessageById(id)
+
+    res.redirect("/")
+}
+
 module.exports = {
     getMessages,
     addMessage,
-    showmessageDetails
+    showmessageDetails,
+    deleteMessage
 }
